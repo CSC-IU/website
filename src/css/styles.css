@@ -1065,11 +1065,9 @@ ul.social-buttons li a:active {
 #twitter:hover {
     background-color: #55ACEE;
 }
-
 #instagram:hover {
     background-color: #3f729b;
 }
-
 #github:hover {
     background-color: #6cc644;
 }
@@ -1085,6 +1083,7 @@ ul.social-buttons li a:active {
 #email-list:hover {
     background-color: #A90533;
 }
+
 
 #to-top {
     transition: all 0.5s;

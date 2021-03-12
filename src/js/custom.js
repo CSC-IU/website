@@ -105,6 +105,7 @@ var typed = new Typed('.element', options); */
         $('.navbar-toggle:visible').click();
     });
 
+
     $("#to-top").mouseover(function() {
         $("#to-top-copy").animate({opacity: "1"}, "slow");
     });
