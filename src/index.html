@@ -156,7 +156,7 @@
                               <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> IDK, IN</p>
                             </div>
                             <div class="col-md-4 wp2 delay-05s">
-                              <div class="icon"><i><img src="img/exec/georgeosterholt.png" alt="George Osterholt" width=100% height=100% style="margin-bottom: 10%"/></i></div>
+                              <div class="icon"><i><img src="img/exec/georgeosterholt.png" title="Hi my name is george! I am awesome" alt="George Osterholt" width=100% height=100% style="margin-bottom: 10%"/></i></div>
                               <h3>George Osterholt  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/georgeosterholt/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
                               <p><strong>Position:</strong> Staff Advisor<br><strong>Hometown:</strong> IDK, IN</p>
                             </div>
@@ -216,7 +216,7 @@
         <!-- section: events-->
         <section id="event">
 
-            <div class="container">
+            <div class="container" id="hiddenrows">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Event Schedule</h2>
                     <h5 class="coming-soon">Every Wednesday @ 6pm EST</h5>
@@ -261,6 +261,8 @@
                             </div>
                         </div>
                     </div>
+                  </div>
+                  <div class="row event-row">
                     <div class="event-item-wrapper wp5">
                         <div class="event-item" data-toggle="modal" href="#event4mod">
                             <div class="event-overlay"></div>
@@ -300,7 +302,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="event-item-wrapper wp5">
+                  </div>
+                  <div class="row event-row">
+                    <div class="event-item-wrapper hidden visible wp5">
                         <div class="event-item" data-toggle="modal" href="#event7mod">
                             <div class="event-overlay"></div>
                             <div class="links">
@@ -313,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="event-item-wrapper wp5">
+                    <div class="event-item-wrapper hidden visible wp5">
                         <div class="event-item" data-toggle="modal" href="#event8mod">
                             <div class="event-overlay"></div>
                             <div class="links">
@@ -326,7 +330,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="event-item-wrapper wp5">
+                    <div class="event-item-wrapper hidden visible wp5">
                         <div class="event-item" data-toggle="modal" href="#event9mod">
                             <div class="event-overlay"></div>
                             <div class="links">
@@ -339,7 +343,50 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                  </div>
+                  <div class="row event-row"> <!--start row -->
+                    <div class="event-item-wrapper hidden visible wp5">
+                        <div class="event-item" data-toggle="modal" href="#event10mod">
+                            <div class="event-overlay"></div>
+                            <div class="links">
+                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
+                            </div>
+                            <img src="img/events/holder.png" alt="image">
+                            <div class="event-info">
+                                <h3>Event 10</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-item-wrapper hidden visible wp5">
+                        <div class="event-item" data-toggle="modal" href="#event11mod">
+                            <div class="event-overlay"></div>
+                            <div class="links">
+                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
+                            </div>
+                            <img src="img/events/holder.png" alt="image">
+                            <div class="event-info">
+                                <h3>Event 11</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-item-wrapper hidden visible wp5">
+                        <div class="event-item" data-toggle="modal" href="#event12mod">
+                            <div class="event-overlay"></div>
+                            <div class="links">
+                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
+                            </div>
+                            <img src="img/events/holder.png" alt="image">
+                            <div class="event-info">
+                                <h3>Event 12</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+                <p class="text-center"><a href="#"  onclick="return false;" id="display-button" class="display">Display More</a></p><p class="text-center"><a href="#"  onclick="return false;" id="display-button" class="displayhide hidden">Display Less</a></p>
+
             </div>
         </section>
         <!--- ||||||||| event modals |||||||||||-->
@@ -521,6 +568,75 @@
         </div>
         <!-- event 9 modal -->
         <div class="modal fade" id="event9mod" tabindex="-1" role="dialog" aria-labelledby="event9mod" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Coming Soon</h4>
+                        <h6 class="modal-title-description">TBD</h6>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <img class="img-responsive img-centered" src="img/events/holder.png" alt="">
+                        </p>
+                        <p class="modal-description">...</p>
+                        <p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" id="zoom-btn">Join Meeting</a></p>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- event 10 modal -->
+        <div class="modal fade" id="event10mod" tabindex="-1" role="dialog" aria-labelledby="event9mod" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Coming Soon</h4>
+                        <h6 class="modal-title-description">TBD</h6>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <img class="img-responsive img-centered" src="img/events/holder.png" alt="">
+                        </p>
+                        <p class="modal-description">...</p>
+                        <p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" id="zoom-btn">Join Meeting</a></p>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- event 11 modal -->
+        <div class="modal fade" id="event11mod" tabindex="-1" role="dialog" aria-labelledby="event9mod" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Coming Soon</h4>
+                        <h6 class="modal-title-description">TBD</h6>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <img class="img-responsive img-centered" src="img/events/holder.png" alt="">
+                        </p>
+                        <p class="modal-description">...</p>
+                        <p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" id="zoom-btn">Join Meeting</a></p>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- event 12 modal -->
+        <div class="modal fade" id="event12mod" tabindex="-1" role="dialog" aria-labelledby="event9mod" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
