@@ -1208,7 +1208,7 @@ ul.social-buttons li a:active {
     margin-top: 50px;
 }
 
-.modal-body #zoom-btn {
+.modal-body .zoom-btn {
     padding: 10px;
     color: #00009C;
     border: 2px solid #00009C;
@@ -1221,10 +1221,68 @@ ul.social-buttons li a:active {
     transition: 0.3s ease-in-out;
 }
 
-.modal-body #zoom-btn:hover {
+.modal-body .zoom-btn:hover {
     color: #fff;
     background-color: #00009C;
 }
+
+.zoom-btn.disabled {
+        opacity: 0.5;
+        filter: grayscale(10%);
+        cursor: not-allowed;
+    }
+
+.modal-body p.record-slides {
+    margin-top: 50px;
+}
+
+.modal-body .recording-btn {
+    padding: 10px;
+    color: #A90533;
+    border: 2px solid #A90533;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 40px 10px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-body .recording-btn:hover {
+    color: #fff;
+    background-color: #A90533;
+}
+
+.recording-btn.disabled {
+        opacity: 0.5;
+        filter: grayscale(10%);
+        cursor: not-allowed;
+    }
+
+.modal-body .slides-btn {
+    padding: 10px;
+    color: #A90533;
+    border: 2px solid #A90533;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 40px 10px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-body .slides-btn:hover {
+    color: #fff;
+    background-color: #A90533;
+}
+
+.slides-btn.disabled {
+        opacity: 0.5;
+        filter: grayscale(10%);
+        cursor: not-allowed;
+    }
 
 .modal-description {
     font-size: 15px;
