@@ -811,6 +811,10 @@ a.constitution-btn:active {
     margin-bottom: 50px;
     text-transform: lowercase;
 }
+#event .coming-soon1 {
+    margin-bottom: 6px;
+    text-transform: lowercase;
+}
 
 #event .event-item-wrapper {
     width: 31%;
