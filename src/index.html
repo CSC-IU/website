@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!--custom stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" id="mainStyle" type="text/css" href="css/styles.css">
     <!--this css has the alert style -->
     <link rel="stylesheet" type="text/css" href="css/extra.css">
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
@@ -31,9 +31,38 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
     <!--jquery helper-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function push(){
+            var checkBox = document.getElementById("darkmodeSwitch");
+            if (checkBox.checked){
+                localStorage.setItem("darkmodeSwitch", "dark");
+            }
+            else{
+                localStorage.setItem("darkmodeSwitch", "light");
+            }
+        }
+        function swapStyleSheet(sheet) {
+            if (document.getElementById("darkmodeSwitch").checked == true) {
+                document.getElementById("mainStyle").setAttribute("href", "css/dark-styles.css");
+                document.getElementById("darkmodeSwitch-icon").setAttribute("src", "img/sun.png");
+            } 
+            else {
+                document.getElementById("mainStyle").setAttribute("href", "css/styles.css");
+                document.getElementById("darkmodeSwitch-icon").setAttribute("src", "img/moon.png");
+            }
+            push()
+        }
+        function pull(){
+            var checked = localStorage.getItem('darkmodeSwitch');
+            if (localStorage.getItem("darkmodeSwitch") == "dark"){
+                document.getElementById("darkmodeSwitch").checked = true;
+            }
+            swapStyleSheet();
+        }
+    </script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100"> <!-- oncontextmenu="return false"  use to turn of right click-->
+<body onload="pull()" id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100"> <!-- oncontextmenu="return false"  use to turn of right click-->
   <!-- loader for screen -->
      <div id="loader-wrapper">
         <div id="loader"></div>
@@ -63,6 +92,7 @@
                         <li><a class="page-scroll" href="#constitution">Constitution</a></li>
                         <li><a class="page-scroll" href="#event">Event Schedule</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
+                        <li><input onclick="swapStyleSheet()" id="darkmodeSwitch" type="checkbox" name="darkmodeSwitch" style="display:none;"><label for="darkmodeSwitch"><img id="darkmodeSwitch-icon" src="img/sun.png"></label></li>
                     </ul>
                 </div>
             </div>
@@ -163,8 +193,8 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <h3><a class="page-scroll" href="pages/execarchives.html" style="color: #A90533">Exec Archives</a></h3>
-                    <h3><a class="page-scroll" href="pages/execform.html" style="color: #A90533">Executive Board Application</a></h3>
+                    <h3><a class="page-scroll, exec-links" href="pages/execarchives.html">Exec Archives</a></h3>
+                    <h3><a class="page-scroll, exec-links" href="pages/execform.html">Executive Board Application</a></h3>
             </div>
         </section>
         <!-- section: constitution -->
@@ -219,7 +249,7 @@
             <div class="container" id="hiddenrows">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Event Schedule</h2>
-                    <h5 style="text-transform: capitalize" class="coming-soon1">Every Tuesday @ 7:30pm EST</h5>
+                    <h5 style="text-transform: capitalize" class="coming-soon1">Every Tuesday @ 7:00pm EST</h5>
                     <h5 style="text-transform: capitalize" class="coming-soon">Location: <span style="text-transform: capitalize">Luddy Hall 3115</span></h5>
                     <h3 style="margin-bottom: 6px">Upcoming Events</h3>
                     <h5 class="coming-soon2">(Click each event to learn more)</h5>

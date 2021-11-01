@@ -13,8 +13,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    color: #000;
-    background-color: #FFF;
+    color: #FFF;
+    background-color: #121212;
     margin: 0px auto;
     position: relative;
     font-smoothing: antialiased;
@@ -243,7 +243,7 @@ p {
 }
 
 a {
-    color: #00009C;
+    color: #58a6ff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -641,7 +641,7 @@ a.fa.fa-angle-down:focus {
 #exec {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #F0F0F0;
+    background-color: #1E1E1E;
 }
 
 #exec h3 {
@@ -706,7 +706,7 @@ a.fa.fa-angle-down:focus {
 #constitution {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #fff;
+    background: #121212;
 }
 
 #constitution p {
@@ -783,7 +783,7 @@ a.constitution-btn:active {
 #event {
     padding-top: 90px;
     padding-bottom: 100px;
-    background: #fff;
+    background: #121212;
 }
 
 #event * {
@@ -959,12 +959,12 @@ a.constitution-btn:active {
 }
 
 #event #display-button {
-    color: #000;
+    color: #FFF;
     padding: 10px 20px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    border: 2px solid #000;
+    border: 2px solid #FFF;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
@@ -980,7 +980,7 @@ a.constitution-btn:active {
 #contact {
     padding-top: 50px;
     padding-bottom: 70px;
-    background-color: #F0F0F0;
+    background-color: #1E1E1E;
 }
 
 .email-icon {
@@ -1003,12 +1003,12 @@ a.constitution-btn:active {
 }
 
 #contact #email-button {
-    color: #000;
+    color: #FFF;
     padding: 10px 20px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    border: 2px solid #000;
+    border: 2px solid #FFF;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
@@ -1329,12 +1329,18 @@ img::-moz-selection {
     background: 0 0;
 }
 
+.exec-links{
+    color: #fb0046;
+}
+.exec-links:hover{
+    /*color:  #A90533;*/
+    color: #fb0046;
+}
+
 #darkmodeSwitch-icon{
     width: 30px;
     margin-top: 10px;
-    transition: 2s;
 }
 #darkmodeSwitch-icon:hover{
     opacity: 70%;
-    transition: 2s;
 }
