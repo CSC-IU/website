@@ -31,7 +31,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
     <!--jquery helper-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Script for the dark/light mode -->
     <script type="text/javascript">
+        // Saves the preferences to local storage on the user's computer
         function push(){
             var checkBox = document.getElementById("darkmodeSwitch");
             if (checkBox.checked){
@@ -41,7 +44,11 @@
                 localStorage.setItem("darkmodeSwitch", "light");
             }
         }
+
+        // Swaps stylesheets between one with a dark theme in mind, and one with a light theme
         function swapStyleSheet(sheet) {
+            // If the checkbox is checked, we will set the theme to dark, otherwise we set it to dark
+            // We also update the icon for the checkbox here
             if (document.getElementById("darkmodeSwitch").checked == true) {
                 document.getElementById("mainStyle").setAttribute("href", "css/dark-styles.css");
                 document.getElementById("darkmodeSwitch-icon").setAttribute("src", "img/sun.png");
@@ -52,11 +59,14 @@
             }
             push()
         }
+
+        // Pulls the preferences from the localstorage on page load
         function pull(){
             var checked = localStorage.getItem('darkmodeSwitch');
             if (localStorage.getItem("darkmodeSwitch") == "dark"){
                 document.getElementById("darkmodeSwitch").checked = true;
             }
+            // Though the checkbox has been set to checked or unchecked, the function to pick a sheet has not yet been called, so we call it now
             swapStyleSheet();
         }
     </script>
