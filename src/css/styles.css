@@ -1331,7 +1331,6 @@ img::-moz-selection {
 
 #darkmodeSwitch-icon{
     width: 30px;
-    margin-top: 10px;
     transition: 2s;
 }
 #darkmodeSwitch-icon:hover{
