@@ -248,7 +248,9 @@ a {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-
+a:visited{
+    color: #58a6ff;
+}
 a:hover,
 a:focus,
 a:active,
@@ -1336,7 +1338,9 @@ img::-moz-selection {
     /*color:  #A90533;*/
     color: #fb0046;
 }
-
+.exec-links:visited{
+    color: #fb0046;
+}
 #darkmodeSwitch-icon{
     width: 30px;
 }
