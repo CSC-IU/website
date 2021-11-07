@@ -1337,3 +1337,10 @@ img::-moz-selection {
     opacity: 70%;
     transition: 2s;
 }
+.exec-links{
+    color: #A90533;
+}
+.exec-links:hover{
+    /*color:  #A90533;*/
+    color: #A90533;
+}
