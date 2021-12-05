@@ -19,18 +19,18 @@ $(document).ready(function() {
 
 /* adds the hide/show feature to events */
 $(".display").click(function() {
-  $('#hiddenrows .hidden').slice(0, 2).removeClass('hidden');
+  $('#hiddenrows .hidden').slice(0, 3).removeClass('hidden');
   if ($('#hiddenrows .hidden').length == 0) {
     $(this).addClass('hidden');
   }
 });
 
 $(".displayhide").click(function() {
-  $('#hiddenrows .visible').slice(0, 1).addClass('hidden');
-  if ($('#hiddenrows .visible').length == 1) {
+  $('#hiddenrows .visible').slice().addClass('hidden');
+  /**if ($('#hiddenrows .visible').length == 4) {*/
     $(this).addClass('hidden');
 		$(".display").removeClass('hidden');
-  }
+  /**}*/
 });
 /* end hide/show feature */
 
