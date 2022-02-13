@@ -1027,7 +1027,22 @@ a.constitution-btn:active {
     }
 }
 
+#resources #resource-button {
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    border: 2px solid #FFF;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
 
+#resources #resource-button:hover {
+    color: #fff;
+    background: #A90533;
+    border: 2px solid #A90533;
+}
 /* footer */
 
 footer {
