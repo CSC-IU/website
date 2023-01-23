@@ -80,11 +80,11 @@
             swapStyleSheet();
         }
 
-        
-
         window.onload = function() {document.body.scrollTop = document.documentElement.scrollTop = 0;};
     </script>
 </head>
+
+
 
 <body onload="pull()" id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100"> <!-- oncontextmenu="return false"  use to turn of right click-->
   <!-- loader for screen -->
@@ -123,6 +123,9 @@
                 </div>
             </div>
         </nav>
+
+
+
         <!-- Section: Introduction -->
         <section id="intro" class="intro text-center">
             <div class="overlay">
@@ -141,6 +144,8 @@
                 <div id="particles-js"></div>
             </div>
         </section>
+        <!-- /Section: Introduction-->
+
 
         <!-- Section: who we are / join the club -->
         <section id="about" class="text-center">
@@ -155,7 +160,6 @@
                           <br/>
                           <br/>
                           <br/>
-                          <!--<img src="img/" id="logo-image" />-->
                           <h2>About Us</h2>
                             <p>
                                 Since 2016, the Cyber Security Club at Indiana University has provided resources to its members in order to allow them to understand what a career in cyber security means.
@@ -173,29 +177,36 @@
                   </div>
         </section>
         <!-- /section: who we are / join the club -->
-        <!-- section: exec -->
 
+
+
+        <!-- section: events -->
+        <section id="event">
+            <div class="container" id="hiddenrows">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Event Schedule</h2>
+                    <h5 style="text-transform: capitalize" class="coming-soon1">Tuesdays @ 5-6pm EST</h5>
+                    <h5 style="text-transform: capitalize" class="coming-soon1">Wednesdays @ 6-7pm EST</h5>
+                    <h5 style="text-transform: capitalize" class="coming-soon">Location: <span style="text-transform: capitalize">Room 3115, Luddy Hall</span></h5>
+                </div>
+            </div>
+        </section>
+        <!-- /section: events -->
+
+
+        
+        <!-- section: exec -->
         <section id="exec" class="text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Meet the Exec Board</h2>
                         <div class="spacer-10"></div>
-                        <!--<div class="col-md-4 wp2">
-                          <div class="icon"><i><img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                          <h3>Tracy Miles  <a id="linkedin" title="LinkedIn" href="https://linkedin.com/in/twmiles" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                          <p><strong>Position:</strong> President<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Greenwood, IN</p>
-                        </div>-->
                         <div class="col-md-4 wp2 delay-025s">
                           <div class="icon"><i><img src="img/exec/meredithfain-fall2022.png" alt="Meredith Fain" width=100% height=100% style="margin-bottom: 10%"/></i></div>
                           <h3>Meredith Fain  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/meredith-fain-a31273206/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
                           <p><strong>Position:</strong> President<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Greenwood, IN</p>
                         </div>
-                        <!--<div class="col-md-4 wp2 delay-05s">
-                          <div class="icon"><i><img src="img/exec/jackruocco.png" alt="Jack Ruocco" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                          <h3>Jack Ruocco  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jack-ruocco/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                          <p><strong>Position:</strong> Finance Officer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Deerfield, IL</p>
-                        </div>-->
                         <div class="col-md-4 wp2">
                           <div class="icon"><i><img src="img/exec/bradyanderson.png" alt="Brady Anderson" width=100% height=100% style="margin-bottom: 10%"/></i></div>
                           <h3>Brady Anderson  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/brady-anderson-2750b9148/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
@@ -208,14 +219,6 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="row">
-                    <div class="col-md-4 wp2 delay-025s">
-                      <div class="icon"><i><img src="img/exec/thomaswest.png" alt="Thomas West" width=100% height=100% style="margin-bottom: 10%"/></i></div><img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>
-                      <h3>Thomas West III  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/thomas-west-iii/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> Security and Human Centered Computing<br><strong>Hometown:</strong> Fort Wayne, IN</p>
-                    </div>
-                    
-                </div>-->
                 <div class="row">
                     <div class="col-md-4 wp2">
                       <div class="icon"><i><img src="img/exec/bendattilio.png" alt="Ben D'attilio" width=100% height=100% style="margin-bottom: 10%"/></i></div>
@@ -225,13 +228,13 @@
                     <div class="col-md-4 wp2 delay-025s">
                       <div class="icon"><i><img src="img/exec/benmitchell.png" alt="Ben Mitchell" width=100% height=100% style="margin-bottom: 10%"/></i></div><!--<img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>-->
                       <h3>Ben Mitchell  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/benjaminrmitchell/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Cybersecurity and Global Policy, and Political Science<br><strong>Hometown:</strong> Greenwood, IN</p>
+                      <p><strong>Position:</strong> Lab Developer<br>Web Developer<br><strong>Majors:</strong> Cybersecurity and Global Policy<br>Political Science<br><strong>Hometown:</strong> Greenwood, IN</p>
                     </div>
                     <div class="col-md-4 wp2 delay-05s">
-                      <div class="icon"><i><img src="img/exec/deverkemmenash.png" alt="Dever Kemme Nash" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                      <h3>Dever Kemme Nash  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/deverkn/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Computer Science and Business Management<br><strong>Hometown:</strong> Fort Wayne, IN</p>
-                    </div>
+                        <div class="icon"><i><img src="img/exec/williamim.png" title="Will Im" alt="Will Im" width=100% height=100% style="margin-bottom: 10%"/></i></div>
+                        <h3>Will Im  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/william-im/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Cybersecurity and Global Policy<strong><br>Hometown:</strong> Woolwich, ME</p>
+                      </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 wp2">
@@ -240,14 +243,14 @@
                       <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Computer Science<br><!--<strong>Hometown:</strong> Madison, IN--></p>
                     </div>
                     <div class="col-md-4 wp2 delay-025s">
-                      <div class="icon"><i><img src="img/exec/mollyorourke1.png" alt="Molly O'Rourke" width=100% height=100% style="margin-bottom: 10%"/></i></div><!--<img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>-->
-                      <h3>Molly O'Rourke  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/molly-o-rourke-6760611b6/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Student Engagement Officer<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Carmel, IN</p>
+                      <div class="icon"><i><img src="img/exec/tannerwilburn.png" alt="Tanner Wilburn" width=100% height=100% style="margin-bottom: 10%"/></i></div><!--<img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>-->
+                      <h3>Tanner Wilburn  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/abouttanner/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                      <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Law (JD)<br><strong>Hometown:</strong> Muncie, IN</p>
                     </div>
                     <div class="col-md-4 wp2 delay-05s">
-                      <div class="icon"><i><img src="img/exec/spencerchambers.png" alt="Spencer Chambers" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                      <h3>Spencer Chambers  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/spencer-chambers-39083b1b3/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Financial Officer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<strong><br><strong>Minor:</strong> Mathematics<br>Hometown:</strong> Kokomo, IN</p>
+                      <div class="icon"><i><img src="img/exec/sparshnair.png" alt="Sparsh Nair" width=100% height=100% style="margin-bottom: 10%"/></i></div>
+                      <h3>Sparsh Nair  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/sparshnair/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                      <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Computer Science<br>Hometown:</strong> Chennai, Inida</p>
                     </div>
                 </div>
                 <div class="row">
@@ -257,15 +260,15 @@
                       <p><strong>Position:</strong> Public Relations Officer<br><strong>Major:</strong> Law and Public Policy<br><strong>Minors:</strong> Information Systems and Homeland Security Studies<br><strong>Hometown:</strong> Madison, IN</p>
                     </div>
                     <div class="col-md-4 wp2 delay-025s">
-                      <div class="icon"><i><img src="img/exec/emilymcgough.png" alt="Emily McGough" width=100% height=100% style="margin-bottom: 10%"/></i></div><!--<img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>-->
-                      <h3>Emily McGough  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/emilymcgough0/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Secretary<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> HCC<br><strong>Minor:</strong> Marketing<br><strong>Hometown:</strong> Buffalo, NY</p>
+                      <div class="icon"><i><img src="img/exec/isamonroy.png" alt="Isa Monroy" width=100% height=100% style="margin-bottom: 10%"/></i></div><!--<img src="img/exec/tracymiles.png" alt="Tracy Miles" width=100% height=100% style="margin-bottom: 10%"/>-->
+                      <h3>Isa Monroy </h3>
+                      <p><strong>Position:</strong> Secretary<br><strong>Major:</strong> Cybersecurity and Global Policy<br><strong>Hometown:</strong> Charlotte, NC</p>
                     </div>
                     <div class="col-md-4 wp2 delay-05s">
-                      <div class="icon"><i><img src="img/exec/williamim.png" title="Will Im" alt="Will Im" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                      <h3>Will Im  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/william-im/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                      <p><strong>Position:</strong> Web Development Officer<br><strong>Major:</strong> Cybersecurity and Global Policy<strong><br>Hometown:</strong> Woolwich, ME</p>
-                    </div>
+                        <div class="icon"><i><img src="img/exec/spencerchambers.png" alt="Spencer Chambers" width=100% height=100% style="margin-bottom: 10%"/></i></div>
+                        <h3>Spencer Chambers  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/spencer-chambers-39083b1b3/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Financial Officer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<br><strong>Minor:</strong> Mathematics<br><strong>Hometown:</strong> Kokomo, IN</p>
+                      </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 wp2">
@@ -274,17 +277,16 @@
                       <p><strong>Position:</strong> Staff Advisor<br><strong>Hometown:</strong> Bloomington, IN</p>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 wp2 delay-05s">
-                          <div class="icon"><i><img src="img/exec/georgeosterholt.png" title="Hi my name is george! I am awesome" alt="George Osterholt" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                          <h3>George Osterholt  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/georgeosterholt/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                          <p><strong>Position:</strong> Staff Advisor<br><strong>Hometown:</strong> Bloomington, IN</p>
-                        </div>-->
                 </div>
                 <div class="col-md-12">
                     <h3><a class="page-scroll, exec-links" href="pages/execarchives.html">Exec Archives</a></h3>
                     <!--<h3><a class="page-scroll, exec-links" href="pages/execform.html">Executive Board Application</a></h3>-->
             </div>
         </section>
+        <!-- /section: exec -->
+
+
+    
         <!-- section: constitution -->
         <section id="constitution">
             <div class="container">
@@ -297,11 +299,12 @@
 
                     </div>
               </div>
-                <!-- /row -->
             </div>
-            <!-- /container-->
         </section>
         <!-- /section: constitution -->
+
+
+
         <!-- section: constitution button -->
         <section id="const">
             <div class="text-center">
@@ -314,1348 +317,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /row -->
                     </div>
-                    <!-- /container -->
                 </div>
             </div>
         </section>
         <!-- /section: constitution button -->
 
-        <!--alert-->
 
-      <!--  <div class="alert">
-			<img src="img/alert-icon.png" height="24px">
-			Cyber Security Club activities have been suspended indefinitely due to the COVID-19 pandemic. <a href="http://go.iu.edu/2mtf">More information here</a>
-		  </div> -->
-
-        <!--/alert-->
-
-        <!-- section: events-->
-        <section id="event">
-
-            <div class="container" id="hiddenrows">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Event Schedule</h2>
-                    <h5 style="text-transform: capitalize" class="coming-soon1">Mondays @ 5-6pm EST</h5>
-                    <h5 style="text-transform: capitalize" class="coming-soon">Location: <span style="text-transform: capitalize">Room 3115, Luddy Hall</span></h5>
-                    <h3 style="margin-bottom: 6px">Upcoming Events</h3>
-                    <h5 class="coming-soon2">(Click each event to learn more)</h5>
-                    <div class="row event-row">
-                        <div class="event-item-wrapper wp5">
-                            <div class="event-item" data-toggle="modal" href="#event1modup">
-                            </div>
-                        </div>
-                        <div class="event-item-wrapper wp5">
-                            <div class="event-item" data-toggle="modal" href="#event2modup">
-                                <div class="event-overlay"></div>
-                                <div class="links">
-                                    <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                    <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                                </div>
-                                <img src="img/events/Jeopardy-Fall2022.png" alt="image">
-                                <div class="event-info">
-                                    <h3>Jeopardy</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="event-item-wrapper wp5">
-                            <div class="event-item" data-toggle="modal" href="#event3modup">
-                            </div>
-                        </div>
-                      </div>
-                    <h3>Past Events</h3>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event35mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Steganography-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Steganography</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event34mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/2022-DockerLab.png" alt="image">
-                            <div class="event-info">
-                                <h3>Docker</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event33mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Darkweb-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Dark Net</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event32mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/GrantThorton-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Grant Thorton</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event31mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/malwaredevelopment-fall2022.jpg" alt="image">
-                            <div class="event-info">
-                                <h3>Malware Development</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper wp5">
-                        <div class="event-item" data-toggle="modal" href="#event30mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Certifications-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Careers and Certifications</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event29mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/CallOut-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Call Out Meeting</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event28mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/SocialEvent-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Social Event</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event27mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/NetworkingsniffersSpring2022_1.png" alt="image">
-                            <div class="event-info">
-                                <h3>Networking & Sniffers w/ Python</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event26mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Jeopardy-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Jeopardy</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event25mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/BlockchainPt2-Fall2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Smart Contract Analysis</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event24mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Blockchain-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Blockchain & Web 3.0</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event23mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/WindowsPentesting-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Windows Pentesting</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event22mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/JoshuaSpeaker-spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Guest Speaker: Joshua Streiff</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event21mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Certifications-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Cybersecurity Certification</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event1mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/CrossSiteScript-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Cross Site Scripting</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visisble wp5">
-                        <div class="event-item" data-toggle="modal" href="#event2mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/OverTheWire-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Over The Wire: Bandit</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event3mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Calloutmeeting-Spring2022.png" alt="image">
-                            <div class="event-info">
-                                <h3>Call Out Meeting!</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event4mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/metasploit-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Metasploit Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visisble wp5">
-                        <div class="event-item" data-toggle="modal" href="#event5mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/BurpsuiteNmapLab-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Burpsuite and Nmap Practice</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event6mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/nmap-fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Burpsuite/NMAP Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event7mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/burpsuiteLab-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Burpsuite Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event8mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/KaliCodebreakerLab-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Kali and Codebreaker Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event9mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/VulnerabilitiesLab-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Vulnerabilities Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event10mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/VMLab-Fall2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Virtual Machines</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event11mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/networkingLab-fall2021.png" alt="Resume">
-                            <div class="event-info">
-                                <h3>Network Fundamentals</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event12mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/linuxLab-Fall2021.png" alt="Linux">
-                            <div class="event-info">
-                                <h3>Linux Deep Dive</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event13mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/resumereview-fall2021.png" alt="Network">
-                            <div class="event-info">
-                                <h3>Resume Workshop</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event14mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/metasploit-Spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Metasploit Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event15mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/Nmap-spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>NMAP Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event16mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/guestSpeaker-spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Guest Speaker: Dr. Jean Camp</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event17mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/careerAndCertification-spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Careers and Certifications</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event18mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/wiresharkLab-Spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Wireshark Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row event-row">
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event19mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/linuxLab-Spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Deep Dive Into Linux</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="event-item-wrapper hidden visible wp5">
-                        <div class="event-item" data-toggle="modal" href="#event20mod">
-                            <div class="event-overlay"></div>
-                            <div class="links">
-                                <a class="image-link"><i class="fa fa-search-plus"></i></a>
-                                <!-- <a href="https://google.com" target="_blank"><i class="fa fa-link"></i></a> -->
-                            </div>
-                            <img src="img/events/burpsuiteLab-Spring2021.png" alt="image">
-                            <div class="event-info">
-                                <h3>Burpsuite Lab</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-                <p class="text-center"><a href="#"  onclick="return false;" id="display-button" class="display">Display More</a></p><p class="text-center"><a href="#"  onclick="return false;" id="display-button" class="displayhide hidden">Display Less</a></p>
-
-            </div>
-        </section>
-        <!--- ||||||||| event modals |||||||||||--> <!-- use this for zoom until Jared graduates <p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn" title="Join Zoom Meeting">Join Meeting</a></p> -->
-        <!-- for future reference add new events on top -->
-        <!-- event 1 modal upcoming -->
-        <div class="modal fade" id="event2modup" tabindex="-1" role="dialog" aria-labelledby="event2modup" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Jeopary</h4>
-                        <h6 class="modal-title-description">Monday, November 14 @ 5:00pm EST</h6>
-                        <!--<h6 class="modal-title-description">Tuesday, April 19 @ 6:30pm EST</h6>-->
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Jeopardy-Fall2022.png" alt="Image">
-                        </p>
-                        <p class="modal-description">We will be josting a jeopardy over cybersecurity related topics like "Top Hacker Groups", "Password Security", "World's Biggest Hacks", "Previous Lab Material", and "Name that TCP/UDP Port"<br>We will also have pizza available.<br>Everyone is welcome!</p>
-                        <br/>
-                        <!--<p class="record-slides"><a href="https://docs.google.com/presentation/d/1pjzJVFjsMIYdeRb6ttF3aiNnuBmFb5E-ecusdjyb-YY/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>-->
-                        <!--<p class="record-slides"><a target="_blank" class="slides-btn disabled" title="View Slides">View Slides</a></p>-->
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--past events-->
-        <!-- event 1 modal -->
-        <div class="modal fade" id="event1mod" tabindex="-1" role="dialog" aria-labelledby="event1mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Cross Site Scripting</h4>
-                        <h6 class="modal-title-description">Tuesday, February 1 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/CrossSiteScript-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Find out what Cross Site Scripting is, and how hackers use it to gain information!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/19wbUVSoxXZDE14KCi2A_TRWBmhqYk_WqA2tQUt_32fc/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 2 modal -->
-        <div class="modal fade" id="event2mod" tabindex="-1" role="dialog" aria-labelledby="event2mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Over The Wire: Bandit</h4>
-                        <h6 class="modal-title-description">Tuesday, January 25 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/OverTheWire-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Walk through a beginner CTF for a crash course in Linux!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1olCK6b1Ww9rAHDmRld5nuwMNaMzW0_GOkQJ_yxKOV7I/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 3 modal -->
-        <div class="modal fade" id="event3mod" tabindex="-1" role="dialog" aria-labelledby="event3mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Spring 2022 Callout Meeting</h4>
-                        <h6 class="modal-title-description">Tuesday, January 18 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Calloutmeeting-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Our first meeting of the Spring semester! We can't wait to see you all!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1bJs7MwZBRHBOqRytxxm1Qi8RtDHzG_xd5mHnLOn4opw/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 4 modal -->
-        <div class="modal fade" id="event4mod" tabindex="-1" role="dialog" aria-labelledby="event4mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Metasploit Lab</h4>
-                        <h6 class="modal-title-description">Tuesday, November 16 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/metasploit-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This week, we will be working with Metasploit, a free penetration testing software! We will learn how to utilize it and how to find and prevent vulnerabilities in a network!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/11ytKZ3HH8iYXKdz3bsDyL_IfopHpXsVHEg9H75bZpy0/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 5 modal -->
-        <div class="modal fade" id="event5mod" tabindex="-1" role="dialog" aria-labelledby="event5mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Burpsuite and Nmap Practice</h4>
-                        <h6 class="modal-title-description">Tuesday, November 9 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/BurpsuiteNmapLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">Practice your skills with a guided walkthrough of a few challenges as well as the opportunity to practice on your own, while still being able to get help from others in the lab!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1M3BY2-K2r_qDXkzER5cad2N9VelvX3e6eMQrZkWafHQ/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 6 modal -->
-        <div class="modal fade" id="event6mod" tabindex="-1" role="dialog" aria-labelledby="event6mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Burpsuite/Nmap Lab</h4>
-                        <h6 class="modal-title-description">Tuesday, November 2 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/nmap-fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">In this lab, we review what nmap is as well as how it works.</p>
-                      <p class="record-slides"><a href="https://docs.google.com/presentation/d/1MrRnts_V2YalDPsE762-AVE7JKaBRFbj05cJ_d8bSSY/edit?usp=sharing" target="_blank" class="slides-btn">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 7 modal -->
-        <div class="modal fade" id="event7mod" tabindex="-1" role="dialog" aria-labelledby="event7mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Burpsuite Lab</h4>
-                        <h6 class="modal-title-description">Tuesday, October 26 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/burpsuiteLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This lab goes over Burpsuite, an industry standard pentesting tool. We will use it to find some of the most common vulnerabilities and practice hacking a sandboxed website!</p>
-                        <!--<p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn">Join Meeting</a></p>-->
-						<p class="record-slides"><a href="https://docs.google.com/presentation/d/1TOq7e-4U5JZZdfUV7b4f2HUIfZEC9dR5FjE_Vjz4U1Q/edit?usp=sharing" target="_blank" class="slides-btn">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 8 modal -->
-        <div class="modal fade" id="event8mod" tabindex="-1" role="dialog" aria-labelledby="event8mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Kali and Codebreaker Lab</h4>
-                        <h6 class="modal-title-description">Tuesday, October 19 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/KaliCodebreakerLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This lab is split between working through codebreaker challenges and virtual machine setup with Kali linux.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1ldpOl8HVDvqkYzGhWyEVSlmZvXz747dEggoTir7PHvM/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 9 modal -->
-        <div class="modal fade" id="event9mod" tabindex="-1" role="dialog" aria-labelledby="event9mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Vulnerabilities Lab</h4>
-                        <h6 class="modal-title-description">Tuesday, October 12 @ 7:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/VulnerabilitiesLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This lab covers sommon vulnerabilities found within Information Systems. It covers topics such as Brute Force Attacks, SQL Injection, Phishing Attacks, and many more!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1J1jzS4OqCrrj3C03Q4l0tp2so9QklYoKtdJ3Jm2Udt8/edit?usp=sharing" target="_blank" class="slides-btn">View Slides</a></p>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 10 modal -->
-        <div class="modal fade" id="event10mod" tabindex="-1" role="dialog" aria-labelledby="event10mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Virtual Machines</h4>
-                        <h6 class="modal-title-description">Tuesday, October 5 @ 7pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/VMLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This lab covers what a virtual machines is, and includes demos on how to set them up.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1ldpOl8HVDvqkYzGhWyEVSlmZvXz747dEggoTir7PHvM/edit?usp=sharing" target="_blank" class="slides-btn">View Slides</a></p>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 11 modal -->
-        <div class="modal fade" id="event11mod" tabindex="-1" role="dialog" aria-labelledby="event11mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Network Fundamentals</h4>
-                        <h6 class="modal-title-description">Tuesday, September 21 @ 7pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/networkingLab-fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">In this lab, we go over the foundations of information security which comes directly from network infrastructure.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1Wmgt1EL4zTdj-6Aq7FZztZQFv6OIHLSum9kD6VGqj14/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 12 modal -->
-        <div class="modal fade" id="event12mod" tabindex="-1" role="dialog" aria-labelledby="event12mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Linux Deep Dive</h4>
-                        <h6 class="modal-title-description">Tuesday, September 14 @ 7pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/linuxLab-Fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This Linux lab will help you learn and apply some of the most practical commands to make you a better programmer and hacker.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1kpKuGKmsnbn5kG9ffmUg7bMPMjFdS-oUP_N_4f7CNLw/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 13 modal -->
-        <div class="modal fade" id="event13mod" tabindex="-1" role="dialog" aria-labelledby="event13mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Resume Workshop</h4>
-                        <h6 class="modal-title-description">Tuesday, September 7 @ 7pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/resumereview-fall2021.png" alt="">
-                        </p>
-                        <p class="modal-description">For this lab, we give you ideas on how to make your resume more appealing to employers, especially for careers in cyber security.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/17EmKn4UzovQD50dPeELUGfgzkUn8WuQji4mJKBVkI3U/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 14 modal -->
-        <div class="modal fade" id="event14mod" tabindex="-1" role="dialog" aria-labelledby="event14mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Metasploit Lab</h4>
-                        <h6 class="modal-title-description">Wednesday, Apr 14 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/metasploit-Spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">Metasploit is a free penetration testing software. We learn how to utilize its functions as well as prevent vulnerabilities in a network!</p>
-                        <!--<p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn">Join Meeting</a></p>-->
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/11H8y3pNssmGoBeHUVPTwmZjt7rG20HB9/view?usp=sharing" target="_blank" class="slides-btn" title="View Recording">View Recording</a> OR <a href="https://docs.google.com/presentation/d/19Dzl4sTHTfxG6OFulbOwNGYrL7fybRFj3FkN5U4HhVE/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 15 modal -->
-        <div class="modal fade" id="event15mod" tabindex="-1" role="dialog" aria-labelledby="event15mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">NMAP Lab</h4>
-                        <h6 class="modal-title-description">Wednesday, Apr 7 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Nmap-spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">NMAP is a free network discovery tool. It is commonly used in securing networks as well as finding vulnerabilities and threats!</p>
-                        <!--<p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn">Join Meeting</a></p>-->
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/1nl2X0oEGTo526RSWhRtzckX-RXhMEpv9/view?usp=sharing" target="_blank" class="slides-btn" title="View Recording">View Recording</a> OR <a href="https://docs.google.com/presentation/d/1WH-701bmALlxT2U0oQY3ngvkD1PbeNmI4yLQeBpaMyE/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 16 modal -->
-        <div class="modal fade" id="event16mod" tabindex="-1" role="dialog" aria-labelledby="event16mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Guest Speaker: Dr. Jean Camp</h4>
-                        <h6 class="modal-title-description">Wednesday, Mar 31 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/guestSpeaker-spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">Professor and Director of Masters of Science in Security Informatics, Dr. Jean Camp, gave an overview of the faculty, program, and options for students interested in the field of Security in higher education.</p>
-                        <!--<p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn">Join Meeting</a></p>-->
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/1_S-1-p70Jmyppjpxmi7z4DG3-ewd1pPp/view?usp=sharing" target="_blank" class="slides-btn" title="View Recording">View Recording</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 17 modal -->
-        <div class="modal fade" id="event17mod" tabindex="-1" role="dialog" aria-labelledby="event17mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Careers and Certifications</h4>
-                        <h6 class="modal-title-description">Wednesday, Mar 17 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/careerAndCertification-spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">An in-depth discussion about the field and the different certifications that can help you acheive your career goals!</p>
-                        <!--<p class="zoom"><a href="http://www.tinyurl.com/csc-zoom" target="_blank" class="zoom-btn">Join Meeting</a></p>-->
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/1aK_4Lys9ExFkXsAPryh12QJAG8aV744V/view?usp=sharing" target="_blank" class="slides-btn" title="View Recording">View Recording</a> OR <a href="https://docs.google.com/presentation/d/1eAR2-k-CjxXjgoaydfV3V7om29eNR5dCEmScqE2gsz0/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 18 modal -->
-        <div class="modal fade" id="event18mod" tabindex="-1" role="dialog" aria-labelledby="event18mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Wireshark Lab</h4>
-                        <h6 class="modal-title-description">Wednesday, Feb 24 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/wiresharkLab-Spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">We're using an industry standard packet-sniffing toool to monitor the flow of a network. Join us to understand the flow of data and Wireshark's role in security through manipulation and monitoring.</p>
-                        <p class="record-slides"><a target="_blank" class="recording-btn disabled" title="Recording Unavailable">View Recording</a> OR <a href="https://docs.google.com/presentation/d/1SNukB1gO5BkuhBxqpG2O3smzoWVN9Le-A21XczTH57Y/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 19 modal -->
-        <div class="modal fade" id="event19mod" tabindex="-1" role="dialog" aria-labelledby="event19mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Linux Lab</h4>
-                        <h6 class="modal-title-description">Wednesday, March 3 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/linuxLab-Spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">Learn and apply some of the most practical Linux commands to make you a better programmer and hacker! Topics covered will include tmux/vim/regex/awk/sed and more!</p>
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/1ry5Ba09yZ1xj-_tOvkfOUuZq4P4jjV-y/preview" target="_blank" class="slides-btn" title="View Recording">View Recording</a> OR <a href="https://docs.google.com/presentation/d/1wVDzt7-IGuwXKrVBe5UB1nRoO-xA4DW8h-TT48qoPbQ/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 20 modal -->
-        <div class="modal fade" id="event20mod" tabindex="-1" role="dialog" aria-labelledby="event20mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Burpsuite Lab</h4>
-                        <h6 class="modal-title-description">Wednesday, March 8 @ 6pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/burpsuiteLab-Spring2021.png" alt="">
-                        </p>
-                        <p class="modal-description">This week, we are using an industry standard pentesting tool to find some of the most common vulnerabilities and practice hacking a sandbox website!</p>
-                        <p class="record-slides"><a href="https://drive.google.com/file/d/1sWs3R-A7mV9GXmmuBvXZUJt1JM-SeAVM/view?usp=sharing" target="_blank" class="slides-btn" title="View Recording">View Recording</a> OR <a href="https://docs.google.com/presentation/d/1nKn8PsDseMYUZaGXZ4AIzT64j-bvbuaoZWRBxgl1Lt0/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 21 modal -->
-        <div class="modal fade" id="event21mod" tabindex="-1" role="dialog" aria-labelledby="event21mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Cybersecurity Certifications</h4>
-                        <h6 class="modal-title-description">Tuesday, February 8 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Certifications-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Find out what Cross Site Scripting is, and how hackers use it to gain information!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1eAR2-k-CjxXjgoaydfV3V7om29eNR5dCEmScqE2gsz0/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 22 modal -->
-        <div class="modal fade" id="event22mod" tabindex="-1" role="dialog" aria-labelledby="event22mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Guest Speaker: Joshua Streiff</h4>
-                        <h6 class="modal-title-description">Tuesday, February 22 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/JoshuaSpeaker-spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Join us for a talk with IoT house manager: Joshua Streiff-Fraser! He will be sharing a session with live network scanning, device probing, and hacking. All are welcome to come and bring their own devices. It will consist of practical, hands-on experience with actual networking devices.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 23 modal -->
-        <div class="modal fade" id="event23mod" tabindex="-1" role="dialog" aria-labelledby="event23mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Windows Pentesting</h4>
-                        <h6 class="modal-title-description">Tuesday, March 8 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/WindowsPentesting-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Come and learn about Microsoft Active Directory and Windows Pentesting. We will review some of the fundamental ideas of Active Directory and walk through the methodology behind getting admin credentials on a network. We will go over resources for further learning, including setting up your own testing lab to experiment with on your own!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1qGgUjI50uP11rw3qrRz5th7RWudOQ_UdG9r-I9wDL3o/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 24 modal -->
-        <div class="modal fade" id="event24mod" tabindex="-1" role="dialog" aria-labelledby="event24mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Blockchain & Web 3.0</h4>
-                        <h6 class="modal-title-description">Tuesday, March 22 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Blockchain-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Learn about the basics of blockchain as well as what all the excitement is about! We will discuss the technology, applications, and current tools!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1k8AZhiETunMOYNxOS0t2-vetrtqWlYRR4COmInogrtM/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 25 modal -->
-        <div class="modal fade" id="event25mod" tabindex="-1" role="dialog" aria-labelledby="event25mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Smart Contract Analysis</h4>
-                        <h6 class="modal-title-description">Tuesday, March 29 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/BlockchainPt2-Fall2022.png" alt="">
-                        </p>
-                        <p class="modal-description">We will deep dive into a smart contract that defines the BAYC NFT. This contract implements core security concepts that will help us have a stronger understanding of the goals in security!</a></p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1cnVgiD3Eg85oqqnKEhVY8GOXjg6w_PtONcDfPBisPEU/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 26 modal -->
-        <div class="modal fade" id="event26mod" tabindex="-1" role="dialog" aria-labelledby="event26mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Jeopardy</h4>
-                        <h6 class="modal-title-description">Tuesday, April 5 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Jeopardy-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">We will be hosting a Jeopardy over cybersecurity related topics like "Name that Malware", "Phish or Safe", "Which Linux Command", "Previous Lab Material", and "General Networking"<br>We will be enjoying pizza and Jeopardy!<br>Everyone is welcome!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 27 modal -->
-        <div class="modal fade" id="event27mod" tabindex="-1" role="dialog" aria-labelledby="event27mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Networking & Sniffers w/ Python</h4>
-                        <h6 class="modal-title-description">Tuesday, April 12 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/NetworkingsniffersSpring2022_1.png" alt="">
-                        </p>
-                        <p class="modal-description">Come build a network sniffer to examine packets using Python. Limited Python experience recommended. Come with Python installed!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 28 modal -->
-        <div class="modal fade" id="event28mod" tabindex="-1" role="dialog" aria-labelledby="event28mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Game Night</h4>
-                        <h6 class="modal-title-description">Tuesday, April 19 @ 6:30pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/SocialEvent-Spring2022.png" alt="">
-                        </p>
-                        <p class="modal-description">In honor of the end of the year coming soon, we wanted to have a get-together celebrating the semester so far! We will be eating pizza, playing board games, competing in Mario Kart, and getting to know each other! Anyone is welcome to come, we hope to see you there!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 29 modal -->
-        <div class="modal fade" id="event29mod" tabindex="-1" role="dialog" aria-labelledby="event29mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Call Out Meeting</h4>
-                        <h6 class="modal-title-description">Monday, August 29 @ 5pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/CallOut-Fall2022.png" alt="">
-                        </p>
-                        <p class="modal-description">The Cybersecurity Club at IU is kicking off our semester Monday, August 29 from 5-6pm in room 3115, Luddy Hall. No matter the year, major, or experience, all are welcome!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1rOn6HhVQlOB35aZYzsBySpnMK6QUrgowNZdfj4euMlc/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 30 modal -->
-        <div class="modal fade" id="event30mod" tabindex="-1" role="dialog" aria-labelledby="event30mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Careers and Certifications</h4>
-                        <h6 class="modal-title-description">Wednesday, September 7 @ 5pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Certifications-Fall2022.png" alt="">
-                        </p>
-                        <p class="modal-description">Interested in the different career opportunities in cybersecurity?<br>Come join us to learn about certifications and various career path boosting certifications!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1vccRo9aL79PV5VInDP3XvRnhQusyfEFpNVPjFexvLsE/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 31 modal -->
-        <div class="modal fade" id="event31mod" tabindex="-1" role="dialog" aria-labelledby="event31mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Malware Development</h4>
-                        <h6 class="modal-title-description">Monday, September 12 @ 5:00pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/malwaredevelopment-fall2022.jpg" alt="">
-                        </p>
-                        <p class="modal-description">Come join us to learn how to build your own malware using methods leveraged by real threat actors!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/13ZdSsc24fO9BuYuSSe3we7SYNqyVlitY4DK4QnMxTNI/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        <!--<p class="record-slides"><a target="_blank" class="recording-btn disabled" title="Recording Unavailable">View Recording</a> OR<a target="_blank" class="slides-btn disabled" title="View Slides">View Slides</a></p>-->
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 32 modal -->
-        <div class="modal fade" id="event32mod" tabindex="-1" role="dialog" aria-labelledby="event32mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Grant Thorton</h4>
-                        <h6 class="modal-title-description">Monday, September 19 @ 5:00pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/GrantThorton-Fall2022.png" alt="Image">
-                        </p>
-                        <p class="modal-description">Join us for a netwroking event with Grant Thorton. We will be discussing potential cybersecurity careers at GT as well as talk with a recruiter!</p>
-                        <br/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 33 modal -->
-        <div class="modal fade" id="event33mod" tabindex="-1" role="dialog" aria-labelledby="event33mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Dark Web</h4>
-                        <h6 class="modal-title-description">Monday, September 26 @ 5:00pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Darkweb-Fall2022.png" alt="Image">
-                        </p>
-                        <p class="modal-description">In this lab we will cover what exists on the dark web, how to stay safe while researching on the dark web, and how a fully private network works.</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/12U6e3jtXBODcpczZ-r_QgI7cAohy4XKuBUKmaxogx80/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        <br/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 34 modal -->
-        <div class="modal fade" id="event34mod" tabindex="-1" role="dialog" aria-labelledby="event34mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Docker</h4>
-                        <h6 class="modal-title-description">Monday, October 17 @ 5:00pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/2022-DockerLab.png" alt="Image">
-                        </p>
-                        <p class="modal-description">This lab will be covering Docker, what it is, its advantages for security, and practical uses. Following the discussion will be a brief demonstration of utilizing Docker for personal use!</p>
-                        <p class="record-slides"><a href="https://docs.google.com/presentation/d/1pjzJVFjsMIYdeRb6ttF3aiNnuBmFb5E-ecusdjyb-YY/edit?usp=sharing" target="_blank" class="slides-btn" title="View Slides">View Slides</a></p>
-                        <br/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- event 35 modal -->
-        <div class="modal fade" id="event35mod" tabindex="-1" role="dialog" aria-labelledby="event35mod" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Steganography</h4>
-                        <h6 class="modal-title-description">Monday, October 24 @ 5:00pm EST</h6>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img class="img-responsive img-centered" src="img/events/Steganography-Fall2022.png" alt="">
-                        </p>
-                        <p class="modal-description">This week's lab will be covering steganography. We will discuss what steganography is, how to encode data into images, the applications of steganography, and how to detect it!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Section: resources -->
         <section id="resources">
@@ -1674,6 +342,9 @@
             </div>
         </section>
         <!-- /section: resources -->
+
+
+
         <!-- Section: contact -->
         <section id="contact">
             <div class="container">
@@ -1692,6 +363,9 @@
             </div>
         </section>
         <!-- /section: contact -->
+
+
+
         <!-- footer -->
         <footer>
             <div class="container">
@@ -1709,24 +383,21 @@
                             <!--<li><a id="groupme" title="GroupMe" href="https://web.groupme.com/join_group/65863443/QBmbyDbE" target="_blank"><img src="img/groupme.png" alt="groupme" width="50%" height="50%" style="margin-bottom: 10%"></i></a></li>-->
                             <!-- Email List Button -->
                             <li><a id="email-list" title="Join our email list!" href="https://list.indiana.edu/sympa/subscribe/sice-security-club-l" target="_blank"><i class="fa fa-envelope"></i></a></li>
-
                         </ul>
-
                         <div class="page-scroll">
-
                               <a id="to-top" class="fa fa-angle-up page-scroll" href="#page-top"></a>
-
-
                             <p id="to-top-copy">Back to Top</p>
                         </div>
                         <div class="copyright">
-
                             <p><i class="fa fa-copyright"></i> 2021 Cyber Security Club at Indiana University</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /container -->
+
+
+
         </footer>
         <!-- main javascript -->
         <script src="js/bootstrap.min.js"></script>
@@ -1753,8 +424,6 @@
           backSpeed: 90,
           loop: true
         });
-
         </script>
 </body>
-<!-- Test for github upload-->
 </html>
