@@ -10,7 +10,8 @@
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
     <!-- a little SEO ? :) lol -->
-    <meta name="keywords" content="cyber security, cyber security club, cybersecurity club, csc at iu, indiana university, IU, university, club, indiana, malware, offsec, defsec, cybsersecurity, cybersec, networking, incident response, ethical hacking, pentesting, penetration testing, threat intelligence, workshop, workshops, training, infrastructure, offensive security, defensive security, indiana university events, events" />
+    <meta name="keywords"
+        content="cyber security, cyber security club, cybersecurity club, csc at iu, indiana university, IU, university, club, indiana, malware, offsec, defsec, cybsersecurity, cybersec, networking, incident response, ethical hacking, pentesting, penetration testing, threat intelligence, workshop, workshops, training, infrastructure, offensive security, defensive security, indiana university events, events" />
     <meta name="author" content="Tracy Miles, William Im" />
     <meta name="description" content="Cyber Security Club at Indiana University" />
     <!--favicon-->
@@ -24,19 +25,20 @@
     <link rel="stylesheet" id="mainStyle" type="text/css" href="css/styles.css">
     <!--this css has the alert style -->
     <link rel="stylesheet" type="text/css" href="css/extra.css">
-    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
+    <link rel="stylesheet" type="text/css"
+        href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100'>
     <!--font added for the source code (title) & font awesome for icons -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!--jquery helper-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WG7E3EKND0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-WG7E3EKND0');
@@ -45,12 +47,12 @@
     <!-- Script for the dark/light mode -->
     <script type="text/javascript">
         // Saves the preferences to local storage on the user's computer
-        function push(){
+        function push() {
             var checkBox = document.getElementById("darkmodeSwitch");
-            if (checkBox.checked){
+            if (checkBox.checked) {
                 localStorage.setItem("darkmodeSwitch", "dark");
             }
-            else{
+            else {
                 localStorage.setItem("darkmodeSwitch", "light");
             }
         }
@@ -62,7 +64,7 @@
             if (document.getElementById("darkmodeSwitch").checked == true) {
                 document.getElementById("mainStyle").setAttribute("href", "css/dark-styles.css");
                 document.getElementById("darkmodeSwitch-icon").setAttribute("src", "img/sun.png");
-            } 
+            }
             else {
                 document.getElementById("mainStyle").setAttribute("href", "css/styles.css");
                 document.getElementById("darkmodeSwitch-icon").setAttribute("src", "img/moon.png");
@@ -71,24 +73,25 @@
         }
 
         // Pulls the preferences from the localstorage on page load
-        function pull(){
+        function pull() {
             var checked = localStorage.getItem('darkmodeSwitch');
-            if (localStorage.getItem("darkmodeSwitch") == "dark"){
+            if (localStorage.getItem("darkmodeSwitch") == "dark") {
                 document.getElementById("darkmodeSwitch").checked = true;
             }
             // Though the checkbox has been set to checked or unchecked, the function to pick a sheet has not yet been called, so we call it now
             swapStyleSheet();
         }
 
-        window.onload = function() {document.body.scrollTop = document.documentElement.scrollTop = 0;};
+        window.onload = function () { document.body.scrollTop = document.documentElement.scrollTop = 0; };
     </script>
 </head>
 
 
 
-<body onload="pull()" id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100"> <!-- oncontextmenu="return false"  use to turn of right click-->
-  <!-- loader for screen -->
-     <div id="loader-wrapper">
+<body onload="pull()" id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
+    <!-- oncontextmenu="return false"  use to turn of right click-->
+    <!-- loader for screen -->
+    <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-top"></div>
         <div class="loader-section section-bottom"></div>
@@ -99,8 +102,9 @@
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
-                  <!--collapse nav -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <!--collapse nav -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-main-collapse">
                         <i class="fa fa-2x fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="https://csc.luddy.indiana.edu/">
@@ -117,8 +121,12 @@
                         <li><a class="page-scroll" href="#event">Event Schedule</a></li>
                         <li><a class="page-scroll" href="#resources">Resources</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        <li><a class="page-scroll" href="https://discord.com/invite/BgF9XcbAya">Join Our Discord</a></li>
-                        <li><a class="page-scroll" style="padding-bottom: 0px;"><input onclick="swapStyleSheet()" id="darkmodeSwitch" type="checkbox" name="darkmodeSwitch" style="display:none;"><label for="darkmodeSwitch"><img id="darkmodeSwitch-icon" src="img/sun.png"></label></a></li>
+                        <li><a class="page-scroll" href="https://discord.com/invite/BgF9XcbAya">Join Our Discord</a>
+                        </li>
+                        <li><a class="page-scroll" style="padding-bottom: 0px;"><input onclick="swapStyleSheet()"
+                                    id="darkmodeSwitch" type="checkbox" name="darkmodeSwitch"
+                                    style="display:none;"><label for="darkmodeSwitch"><img id="darkmodeSwitch-icon"
+                                        src="img/sun.png"></label></a></li>
                     </ul>
                 </div>
             </div>
@@ -131,7 +139,8 @@
             <div class="overlay">
                 <div class="intro-content">
 
-                    <h1 class="animated fadeInDown delay-05s" style="letter-spacing: 0px; text-transform: none">$_<span class="element"></span></h1>
+                    <h1 class="animated fadeInDown delay-05s" style="letter-spacing: 0px; text-transform: none">$_<span
+                            class="element"></span></h1>
                     <p class="subtitle animated fadeInUp delay-05s">Stay Secured. Always.</p>
                     <br>
                     <br>
@@ -154,28 +163,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 wp1">
-                          <br/>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <h2>About Us</h2>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <h2>About Us</h2>
                             <p>
-                                Since 2016, the Cyber Security Club at Indiana University has provided resources to its members in order to allow them to understand what a career in cyber security means.
-								We provide our members with extensive networking opportunities that are beneficial both educationally and professionally.
-								Our mission is to create a fun environment to be both informed and educated in what is desired in potential candidates for cyber security careers.
+                                Since 2016, the Cyber Security Club at Indiana University has provided resources to its
+                                members in order to allow them to understand what a career in cyber security means.
+                                We provide our members with extensive networking opportunities that are beneficial both
+                                educationally and professionally.
+                                Our mission is to create a fun environment to be both informed and educated in what is
+                                desired in potential candidates for cyber security careers.
                             </p>
                             <!--<p><b>Please join our discord server for the most up to date information!</b></p>
                             <div><img src="img/arrow1.png" alt="Arrow" width="10%" height="10%" style="position: absolute; left: 55%"></div>
                             <ul class="list-inline social-buttons animated fadeIn">
                                 <li><a id="discord" title="Discord Server" href="https://discord.com/invite/BgF9XcbAya" target="_blank"><i class="fab fa-discord"></i></a></li>
                             </ul>-->
-                          </div>
                         </div>
                     </div>
-                  </div>
+                </div>
+            </div>
         </section>
         <!-- /section: who we are / join the club -->
 
@@ -198,14 +210,15 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Event Schedule</h2>
                     <h5 style="text-transform: capitalize" class="coming-soon1">Thursdays @ 7-8pm EST</h5>
-                    <h5 style="text-transform: capitalize" class="coming-soon">Location: <span style="text-transform: capitalize">Room 3111, Luddy Hall</span></h5>
+                    <h5 style="text-transform: capitalize" class="coming-soon">Location: <span
+                            style="text-transform: capitalize">Room 3111, Luddy Hall</span></h5>
                 </div>
             </div>
         </section>
         <!-- /section: events -->
 
 
-        
+
         <!-- section: exec -->
         <section id="exec" class="text-center">
             <div class="container">
@@ -214,70 +227,118 @@
                         <h2>Meet the Exec Board</h2>
                         <div class="spacer-10"></div>
                         <div class="col-md-4 wp2 delay-05s">
-                            <div class="icon"><i><img src="img/exec/olu.png" title="Olubade Baker" alt="Olubade Baker" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                            <h3>Olubade Baker  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/olubade-baker-71b540221/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                            <p><strong>Position:</strong> President<br><strong>Major:</strong> Computer Science <strong><br><strong>Specialization:</strong> Artificial Intelligence<br>Hometown:</strong> Atlanta, GA</p>
+                            <div class="icon"><i><img src="img/exec/olubaker.png" title="Olubade Baker"
+                                        alt="Olubade Baker" width=100% height=100% style="margin-bottom: 10%" /></i>
+                            </div>
+                            <h3>Olubade Baker <a id="linkedin" title="LinkedIn"
+                                    href="https://www.linkedin.com/in/olubade-baker-71b540221/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h3>
+                            <p><strong>Position:</strong> President<br><strong>Major:</strong> Computer Science
+                                <strong><br><strong>Specialization:</strong> Artificial
+                                    Intelligence<br>Hometown:</strong> Atlanta, GA
+                            </p>
                         </div>
-                    <div class="col-md-4 wp2 delay-025s">
-                        <div class="icon"><i><img src="img/exec/jack.png" alt="Jack Kelly" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Jack Kelly  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jkelly423/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Vice President<br><strong>Majors:</strong> Computer Science (BS)<br> Secure Computing (Accelerated MS)<br><strong>Specialization:</strong> Security (BS)<br><strong>Hometown:</strong> Chicago, IL</p>
-                    </div>
                         <div class="col-md-4 wp2 delay-025s">
-                            <div class="icon"><i><img src="img/exec/jason.png" alt="Jason Busch" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                            <h3>Jason Busch  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/iujasonbusch/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                            <p><strong>Position:</strong> Finance Officer<br><strong>Major:</strong> Informatics<br><strong>Specialization:</strong> Security Informatics, Financial Literacy<br><strong>Hometown:</strong> Stamford, CT</p>
-                          </div>
+                            <div class="icon"><i><img src="img/exec/jackkelly.png" alt="Jack Kelly" width=100%
+                                        height=100% style="margin-bottom: 10%" /></i></div>
+                            <h3>Jack Kelly <a id="linkedin" title="LinkedIn"
+                                    href="https://www.linkedin.com/in/jkelly423/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h3>
+                            <p><strong>Position:</strong> Vice President<br><strong>Majors:</strong> Computer Science
+                                (BS)<br> Secure Computing (Accelerated MS)<br><strong>Specialization:</strong> Security
+                                (BS)<br><strong>Hometown:</strong> Chicago, IL</p>
+                        </div>
+                        <div class="col-md-4 wp2 delay-025s">
+                            <div class="icon"><i><img src="img/exec/jasonbusch.png" alt="Jason Busch" width=100%
+                                        height=100% style="margin-bottom: 10%" /></i></div>
+                            <h3>Jason Busch <a id="linkedin" title="LinkedIn"
+                                    href="https://www.linkedin.com/in/iujasonbusch/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h3>
+                            <p><strong>Position:</strong> Finance Officer<br><strong>Major:</strong>
+                                Informatics<br><strong>Specialization:</strong> Security Informatics, Financial
+                                Literacy<br><strong>Hometown:</strong> Stamford, CT</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/atmikha.png" alt="Atmikha Jeeju" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Atmikha Jeeju  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/atmikha/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Student Engagement Officer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Artificial Intelligence<br><strong>Hometown:</strong> Chesterton, IN</p>
+                        <div class="icon"><i><img src="img/exec/atmikhajeeju.png" alt="Atmikha Jeeju" width=100%
+                                    height=100% style="margin-bottom: 10%" /></i></div>
+                        <h3>Atmikha Jeeju <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/atmikha/"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Student Engagement Officer<br><strong>Major:</strong> Computer
+                            Science<br><strong>Specialization:</strong> Artificial
+                            Intelligence<br><strong>Hometown:</strong> Chesterton, IN</p>
                     </div>
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/cristina.png" alt="Cristina Cruz" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Cristina Cruz  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/cristina-cruz-6a04a1245/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Student Engagement Officer<br><strong>Major:</strong> Informatics<br><strong>Minor:</strong> Cybersecurity, Psychology<br><strong>Hometown:</strong> Heredia, Dominican Republic</p>
+                        <div class="icon"><i><img src="img/exec/cristinacruz.png" alt="Cristina Cruz" width=100%
+                                    height=100% style="margin-bottom: 10%" /></i></div>
+                        <h3>Cristina Cruz <a id="linkedin" title="LinkedIn"
+                                href="https://www.linkedin.com/in/cristina-cruz-6a04a1245/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Student Engagement Officer<br><strong>Major:</strong>
+                            Informatics<br><strong>Minor:</strong> Cybersecurity,
+                            Psychology<br><strong>Hometown:</strong> Heredia, Dominican Republic</p>
                     </div>
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/henerycash.png" alt="Henery Cash" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Henery Cash  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/hccash/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Public Relations Officer<br><strong>Major:</strong> Cybersecurity and Global Policy<br><strong>Hometown:</strong> Speedway, IN</p>
+                        <div class="icon"><i><img src="img/exec/henerycash.png" alt="Henery Cash" width=100% height=100%
+                                    style="margin-bottom: 10%" /></i></div>
+                        <h3>Henery Cash <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/hccash/"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Public Relations Officer<br><strong>Major:</strong> Cybersecurity
+                            and Global Policy<br><strong>Hometown:</strong> Speedway, IN</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/jasper.png" alt="Jasper Mullis" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Jasper Mullis  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/jasper-mullis-572a742b2/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Lead Lab Developer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Bedford, IN</p>
+                        <div class="icon"><i><img src="img/exec/jaspermullis.png" alt="Jasper Mullis" width=100%
+                                    height=100% style="margin-bottom: 10%" /></i></div>
+                        <h3>Jasper Mullis <a id="linkedin" title="LinkedIn"
+                                href="https://www.linkedin.com/in/jasper-mullis-572a742b2/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Lead Lab Developer<br><strong>Major:</strong> Computer
+                            Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Bedford,
+                            IN</p>
                     </div>
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/kevin.png" alt="Kevin Choe" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Kevin Choe  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/kevin-choe-5a537b279/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Lead Lab Developer<br><strong>Major:</strong> Computer Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong> Westfield, IN</p>
+                        <div class="icon"><i><img src="img/exec/kevinchoe.png" alt="Kevin Choe" width=100% height=100%
+                                    style="margin-bottom: 10%" /></i></div>
+                        <h3>Kevin Choe <a id="linkedin" title="LinkedIn"
+                                href="https://www.linkedin.com/in/kevin-choe-5a537b279/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Lead Lab Developer<br><strong>Major:</strong> Computer
+                            Science<br><strong>Specialization:</strong> Security<br><strong>Hometown:</strong>
+                            Westfield, IN</p>
                     </div>
                     <div class="col-md-4 wp2">
-                        <div class="icon"><i><img src="img/exec/riya.png" alt="Riya Mehta" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Riya Mehta  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/riyamehtaluddy27/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
-                        <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Informatics <br><strong>Specialization:</strong> Artificial Intelligence<br><strong>Minor:</strong> Cybersecurity, Artificial Intelligence<br><strong>Hometown:</strong> Houston, TX</p>
+                        <div class="icon"><i><img src="img/exec/riyamehta.png" alt="Riya Mehta" width=100% height=100%
+                                    style="margin-bottom: 10%" /></i></div>
+                        <h3>Riya Mehta <a id="linkedin" title="LinkedIn"
+                                href="https://www.linkedin.com/in/riyamehtaluddy27/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></h3>
+                        <p><strong>Position:</strong> Lab Developer<br><strong>Major:</strong> Informatics
+                            <br><strong>Specialization:</strong> Artificial Intelligence<br><strong>Minor:</strong>
+                            Cybersecurity, Artificial Intelligence<br><strong>Hometown:</strong> Houston, TX
+                        </p>
                     </div>
                     <div class="col-md-12 wp2">
-                        <div class="icon"><i><img src="img/exec/joshuastreiff.png" alt="Joshua Streiff-Fraser" width=100% height=100% style="margin-bottom: 10%"/></i></div>
-                        <h3>Joshua Streiff-Fraser  <a id="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/joshua-streiff-fraser-409792a5/" target="_blank"><i class="fab fa-linkedin"></i></a></h3>
+                        <div class="icon"><i><img src="img/exec/joshuastreiff.png" alt="Joshua Streiff-Fraser"
+                                    width=100% height=100% style="margin-bottom: 10%" /></i></div>
+                        <h3>Joshua Streiff-Fraser <a id="linkedin" title="LinkedIn"
+                                href="https://www.linkedin.com/in/joshua-streiff-fraser-409792a5/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></h3>
                         <p><strong>Position:</strong> Staff Advisor<br><strong>Hometown:</strong> Bloomington, IN</p>
                     </div>
                 </div>
-                </div>
-                <div class="col-md-12">
-                    <h3><a class="page-scroll, exec-links" href="pages/execarchives.html">Exec Archives</a></h3>
-                    <!--<h3><a class="page-scroll, exec-links" href="pages/execform.html">Executive Board Application</a></h3>-->
+            </div>
+            <div class="col-md-12">
+                <h3><a class="page-scroll, exec-links" href="pages/execarchives.html">Exec Archives</a></h3>
+                <!--<h3><a class="page-scroll, exec-links" href="pages/execform.html">Executive Board Application</a></h3>-->
             </div>
         </section>
         <!-- /section: exec -->
-        
-    
+
+
 
         <!-- section: constitution -->
         <section id="constitution">
@@ -289,7 +350,7 @@
                             <p>Want to know more about how our club operates?</p>
                         </div>
                     </div>
-              </div>
+                </div>
             </div>
         </section>
         <!-- /section: constitution -->
@@ -304,7 +365,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="constitution-button">
-                                    <a class="constitution-btn wp4" href="CSC-Constitution-V2.pdf" target="_blank">Read the Constitution</a>
+                                    <a class="constitution-btn wp4" href="CSC-Constitution-V2.pdf" target="_blank">Read
+                                        the Constitution</a>
                                 </div>
                             </div>
                         </div>
@@ -343,9 +405,11 @@
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <div class="email-icon"><i class="fa fa-paper-plane wp6"></i></div>
                         <h2>More Questions?</h2>
-                        <p>Interested in joining, but have more questions? Feel free to send us an email or check out of FAQs page (coming soon)!</p>
+                        <p>Interested in joining, but have more questions? Feel free to send us an email or check out of
+                            FAQs page (coming soon)!</p>
                         <p style="margin-top:40px;">
-                            <a id="email-button" style="margin-right: 2%" href="mailto:secclub@indiana.edu" target="_blank">Email Us :)</a>
+                            <a id="email-button" style="margin-right: 2%" href="mailto:secclub@indiana.edu"
+                                target="_blank">Email Us :)</a>
                             <!--<a id="email-button" href="faq.html" target="_blank">FAQs</a>-->
                         </p>
                     </div>
@@ -362,20 +426,28 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <ul class="list-inline social-buttons animated fadeIn">
-                            <li><a id="discord" title="Discord Server" href="https://discord.com/invite/BgF9XcbAya" target="_blank"><i class="fab fa-discord"></i></a></li>
+                            <li><a id="discord" title="Discord Server" href="https://discord.com/invite/BgF9XcbAya"
+                                    target="_blank"><i class="fab fa-discord"></i></a></li>
                             <!--BeInvolved Button-->
-                            <li><a id="beinvolved" title="beINvolved" href="https://beinvolved.indiana.edu/organization/csciu" target="_blank"><img src="img/beINvolved_logo.png" alt="beinvolved" width="50%" height="50%" style="margin-bottom: 10%"></a></li>
+                            <li><a id="beinvolved" title="beINvolved"
+                                    href="https://beinvolved.indiana.edu/organization/csciu" target="_blank"><img
+                                        src="img/beINvolved_logo.png" alt="beinvolved" width="50%" height="50%"
+                                        style="margin-bottom: 10%"></a></li>
                             <!-- GitHub Button -->
-                            <li><a id="github" title="Github" href="https://github.com/CSC-IU" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a id="github" title="Github" href="https://github.com/CSC-IU" target="_blank"><i
+                                        class="fab fa-github"></i></a></li>
                             <!-- Instagram Button -->
-                            <li><a id="instagram" title="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a id="instagram" title="Instagram" href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
                             <!--GroupMe Button-->
                             <!--<li><a id="groupme" title="GroupMe" href="https://web.groupme.com/join_group/65863443/QBmbyDbE" target="_blank"><img src="img/groupme.png" alt="groupme" width="50%" height="50%" style="margin-bottom: 10%"></i></a></li>-->
                             <!-- Email List Button -->
-                            <li><a id="email-list" title="Join our email list!" href="https://list.indiana.edu/sympa/subscribe/sice-security-club-l" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                            <li><a id="email-list" title="Join our email list!"
+                                    href="https://list.indiana.edu/sympa/subscribe/sice-security-club-l"
+                                    target="_blank"><i class="fa fa-envelope"></i></a></li>
                         </ul>
                         <div class="page-scroll">
-                              <a id="to-top" class="fa fa-angle-up page-scroll" href="#page-top"></a>
+                            <a id="to-top" class="fa fa-angle-up page-scroll" href="#page-top"></a>
                             <p id="to-top-copy">Back to Top</p>
                         </div>
                         <div class="copyright">
@@ -407,13 +479,14 @@
         <!--typerwriter-->
         <script src="js/typed.js"></script>
         <script>
-        var typed = new Typed('.element', {
-          strings: ["Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "' OR 1= 1; /*", "Cyber Security Club", "@ Indiana University", "ping 192.168.0.1 || pwd", "rm -rf /*"],
-          startDelay: 1200,
-          typeSpeed: 90,
-          backSpeed: 90,
-          loop: true
-        });
+            var typed = new Typed('.element', {
+                strings: ["Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "Cyber Security Club", "@ Indiana University", "' OR 1= 1; /*", "Cyber Security Club", "@ Indiana University", "ping 192.168.0.1 || pwd", "rm -rf /*"],
+                startDelay: 1200,
+                typeSpeed: 90,
+                backSpeed: 90,
+                loop: true
+            });
         </script>
 </body>
+
 </html>
