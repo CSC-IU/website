@@ -115,7 +115,7 @@
 <body>
     <div id="particles-js"></div>
     
-    <h1 style="letter-spacing: 0px; text-transform: none"><span class="element"></span></h1>
+    <h1 style="letter-spacing: 0px; text-transform: none">_@toy~$: <span class="element"></span></h1>
     
     <div class="container">
 
@@ -145,7 +145,7 @@
     <script src="../js/typed.js"></script>
     <script>
         var typed = new Typed('.element', {
-            strings: ["He sees everything..."],
+            strings: ["I see everything..."],
             startDelay: 500,
             typeSpeed: 100,
             backSpeed: 50,
@@ -217,7 +217,7 @@
                 "detect_on": "canvas",
                 "events": {
                     "onhover": {
-                        "enable": false,
+                        "enable": true,
                         "mode": "repulse"
                     },
                     "onclick": {
@@ -225,6 +225,15 @@
                         "mode": "push"
                     },
                     "resize": true
+                },
+                "modes": {
+                    "repulse": {
+                        "distance": 150,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
                 }
             },
             "retina_detect": true
